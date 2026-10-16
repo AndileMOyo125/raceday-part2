@@ -77,10 +77,10 @@ Part2-API/
 
 **You need:** .NET 8 SDK, SQL Server (Express or LocalDB), and the EF Core 8 tool (`dotnet tool install --global dotnet-ef --version 8.0.11`).
 
-1. Clone the repository and open the `Part2-API` folder:
+1. Clone this repository and open the `Part2-API` folder:
    ```bash
-   git clone <your repository link>
-   cd RaceDay-POE/Part2-API
+   git clone https://github.com/AndileMOyo125/raceday-part2.git
+   cd raceday-part2/Part2-API
    ```
 2. Open `RaceDay.Api/appsettings.json` and check the connection string. Change the `Server=` part to match your own SQL Server instance (for example `localhost\SQLEXPRESS` or `(localdb)\MSSQLLocalDB`). The API uses its own database called `RaceDayApiDB`, so it doesn't clash with the `RaceDayDB` created by the Part 1 script.
 3. Restore and build:
