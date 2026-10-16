@@ -145,10 +145,15 @@ A GitHub Actions workflow (`.github/workflows/dotnet-ci.yml`) restores, builds t
 
 Screenshot of a successful build:
 
-`[INSERT PART 2 GREEN BUILD SCREENSHOT HERE]`
+![green build
+](image.png)
 
 ## Part 2 video walkthrough
 
 Unlisted YouTube video demonstrating the running API, the code structure, endpoints, authentication and unit tests:
 
 `[INSERT PART 2 YOUTUBE LINK HERE]`
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
