@@ -155,7 +155,7 @@ Screenshot of a successful build:
 
 Unlisted YouTube video demonstrating the running API, the code structure, endpoints, authentication and unit tests:
 
-`[INSERT PART 2 YOUTUBE LINK HERE]`
+`[https://youtu.be/lvMAUjcraUQ?si=0niFKAAW5PkEp-XX]`
 
 ## License
 
