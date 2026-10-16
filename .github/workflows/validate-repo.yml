@@ -1,0 +1,48 @@
+name: Validate Repository Structure
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-docs-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Check that /docs folder and required files exist
+        run: |
+          echo "Checking repository structure..."
+
+          if [ ! -d "docs" ]; then
+            echo "ERROR: /docs folder is missing."
+            exit 1
+          fi
+          echo "OK: /docs folder found."
+
+          # Check for the ERD image (png or pdf)
+          if ls docs/*.png docs/ERD* 2>/dev/null | grep -qi erd; then
+            echo "OK: ERD file found."
+          else
+            echo "ERROR: No ERD file found in /docs (expected a PNG/PDF with 'ERD' in the name)."
+            exit 1
+          fi
+
+          # Check for the API endpoint plan (md or pdf)
+          if ls docs/*ndpoint* 2>/dev/null | grep -qi -e ".md" -e ".pdf"; then
+            echo "OK: API endpoint plan found."
+          else
+            echo "ERROR: No API endpoint plan found in /docs (expected a .md or .pdf with 'Endpoint' in the name)."
+            exit 1
+          fi
+
+          # Check for the SQL script
+          if ls docs/*.sql 2>/dev/null | grep -q .; then
+            echo "OK: SQL script found."
+          else
+            echo "ERROR: No .sql file found in /docs."
+            exit 1
+          fi
+
+          echo "All required Part 1 files are present. Repository structure is valid."
