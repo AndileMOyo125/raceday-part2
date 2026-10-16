@@ -37,6 +37,9 @@ Screenshot of a successful build:
 
 <img width="1363" height="717" alt="image" src="https://github.com/user-attachments/assets/6c6148f5-25b9-4713-9d9b-143ace781f9c" />
 
+<img width="1365" height="767" alt="image" src="https://github.com/user-attachments/assets/0d9fade7-3d8d-40d4-b85f-df42fa06e0cc" />
+
+
 ## Part 1 video walkthrough
 
 https://youtu.be/2loYNUHwaPg?si=6ZT5BwveyANaIagE
